@@ -67,7 +67,7 @@ export default function LaunchSystem() {
 			<style>{css}</style>
 			<motion.div ref={ref} className='launch-system'>
 				<div className='top-0 pt-24 lg:pt-28 2xl:sticky'>
-					<section className='relative z-50 mx-auto mb-[50px] w-full max-w-7xl px-5 sm:px-10'>
+					<section className='relative z-50 mx-auto w-full max-w-7xl px-5 sm:px-10'>
 						<div className='flex flex-col items-center justify-center'>
 							<h1 className='mb-5 text-5xl text-[#F0F0F0]'>Launch System</h1>
 
@@ -293,18 +293,12 @@ export default function LaunchSystem() {
 						</div>
 					</div>
 				</div>
-				{/* <LaunchSystemStep4 /> */}
 				<div className='2xl:hidden'>
 					<LaunchSystemStep1 />
 					<LaunchSystemStep2 />
 					<LaunchSystemStep3 />
 					<LaunchSystemStep4 />
 				</div>
-
-				{/* {currentSection === 1 && <LaunchSystemStep1 />}
-			{currentSection === 2 && <LaunchSystemStep2 />}
-			{currentSection === 3 && <LaunchSystemStep3 />}
-			{currentSection === 4 && <LaunchSystemStep4 />} */}
 			</motion.div>
 		</>
 	)
